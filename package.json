@@ -1,0 +1,30 @@
+{
+  "name": "janeryngaert.github.io",
+  "version": "1.0.0",
+  "description": "Professional Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janeryngaert/janeryngaert.github.io.git"
+  },
+  "author": "John Marlett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janeryngaert/janeryngaert.github.io/issues"
+  },
+  "homepage": "https://github.com/janeryngaert/janeryngaert.github.io#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.6",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

@@ -1,0 +1,24 @@
+#This file name
+
+#images
+
+# Node
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+assets
+
+node_modules
+npm-debug.log
+.idea/
+dist
