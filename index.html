@@ -1,20 +1,58 @@
 <!doctype html>
-<html>
-  <head>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
-    <script src="/app/app.module.js"></script>
-    <script src='/app/controllers/main.controller.js'></script>
-    <script src='/app/controllers/home.controller.js'></script>
-  </head>
-  <body>
-    <div ng-controller="mainController">
-      <div>{{message}}</div>
-    <div ng-view>
+<html ng-app="jane-ryngaert-app">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Jane Ryngaert</title>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular-route.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="/app/app.module.js"></script>
+  <script src="/app/controllers/main.controller.js"></script>
+  <script src="/app/controllers/home.controller.js"></script>
+  <script src="/app/controllers/contact.controller.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <base href="/">
+</head>
+
+<body>
+  <div class="">
+    <div class="row">
+      <div class="col-xs-3">
+        How is this happening?
+        <!--<div ng-controller="mainController">
+          <div class="">
+            <div class="">
+              <ul class="">
+                <li>
+                  <a ng-href="/#!/home">
+                    <div class="">
+                      <span class="" data-toggle="tooltip" data-placement="bottom" title="Home page">Home</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a ng-href="/#!/contact">
+                    <div class="">
+                      <span class="" data-toggle="tooltip" data-placement="bottom" title="contact info">Contact</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <div class="col-xs-9">
+        <div ng-view></div>
       </div>
     </div>
-    <h1>Hi</h1>
-    
-  </body>
+
+  </div>
+
+
+</body>
+
 </html>

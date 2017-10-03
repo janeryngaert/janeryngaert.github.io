@@ -1,13 +1,25 @@
-let app = angular.module('app', ['ngRoute']);
+let app = angular.module('jane-ryngaert-app', ['ngRoute']);
 
-app.config(function($routeProvider){
-     $routeProvider
-   .when('/', {
-    templateUrl: 'home.html',
-    controller: 'homeController',
-  })
-//   .when('/', {
-//     templateUrl: 'chapter.html',
-//     controller: 'ChapterController'
-//   });
-});
+app.config([  
+    '$locationProvider','$routeProvider', function (  
+    $locationProvider, $routeProvider) {
+  $routeProvider
+      .when('/', {
+      templateUrl: 'app/views/home.html',
+      controller: 'homeController',
+    })
+    .when('/home', {
+      templateUrl: 'app/views/home.html',
+      controller: 'homeController',
+    })
+    .when('/contact', {
+      templateUrl: 'app/views/contact.html',
+      controller: 'contactController'
+    }).otherwise({redirectTo: '/home' });
+
+    
+    $locationProvider.html5Mode(
+        {
+            enabled: false,
+        });
+}]);
