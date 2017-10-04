@@ -1,30 +1,24 @@
 "use strict";
 
-const gulp = require('gulp');
-const webserver = require('gulp-webserver');
-const sass = require('gulp-sass');
-const browsersync = require('browser-sync').create();
-let reload = browsersync.reload;
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let browsersync = require('browser-sync').create();
 
-gulp.task('reload', () => {
-    browsersync.reload();
-});
-gulp.task('browser-sync', () => {
+gulp.task('server',['sass'], () => {
 
     browsersync.init({
-        server: {
-            baseDir: "./"
-        }
+        server:  "./app"
     });
+     gulp.watch("app/**/*.scss", [ 'sass']);
+     gulp.watch(["app/**/*.js","app/**/*.scss", "app/**/*.html"]).on('change',browsersync.reload);
 });
 
 gulp.task('sass', function () {
-    return gulp.src("app/scss/*.scss")
+    return gulp.src("app/css/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("app/css"))
         .pipe(browsersync.stream());
 });
-gulp.task('default', ['browser-sync'], () => {
-    gulp.watch(["app/scss/*.scss", "app/**/*.js", "app/**/*.html"], ['reload', 'sass']);
-}
-);
+
+gulp.task('default', ['server']);
+
