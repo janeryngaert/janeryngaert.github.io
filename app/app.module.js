@@ -15,6 +15,15 @@ app.config([
     .when('/contact', {
       templateUrl: 'views/contact.html',
       controller: 'contactController'
+    }).when('/cv', {
+      templateUrl: 'views/cv.html',
+      controller: 'cvController'
+    }).when('/research', {
+      templateUrl: 'views/research.html',
+      controller: 'researchController'
+    }).when('/teaching', {
+      templateUrl: 'views/teaching.html',
+      controller: 'teachingController'
     }).otherwise({redirectTo: '/home' });
 
     

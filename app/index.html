@@ -13,6 +13,9 @@
   <script src="/controllers/main.controller.js"></script>
   <script src="/controllers/home.controller.js"></script>
   <script src="/controllers/contact.controller.js"></script>
+  <script src="/controllers/cv.controller.js"></script>
+  <script src="/controllers/research.controller.js"></script>
+  <script src="/controllers/teaching.controller.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <base href="/">
@@ -35,50 +38,34 @@
     <div class="row">
       <div class="col-xs-3">
         <div ng-controller="mainController">
-          <div class="panel">
-            <div class="panel-heading panel-primary">
-
-            </div>
-            <div class="panel body">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <a ng-href="/#!/home">
-                    <div class="">
-                      <span class="" data-toggle="tooltip" data-placement="bottom" title="Home page">Home</span>
-                    </div>
+          
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <a class="nav-link jr-brand-color jr-side-link" ng-href="/#!/home">
+                    Home
                   </a>
                 </li>
-                <li class="list-group-item">
-                  <a ng-href="/#!/contact">
-                    <div class="">
-                      <span class="" data-toggle="tooltip" data-placement="bottom" title="contact info">Contact</span>
-                    </div>
+                <li class="nav-item">
+                  <a class="nav-link jr-brand-color jr-side-link" ng-href="/#!/contact">
+                    Contact
                   </a>
                 </li>
-                                <li class="list-group-item">
-                  <a ng-href="/#!/contact">
-                    <div class="">
-                      <span class="" data-toggle="tooltip" data-placement="bottom" title="contact info">CV</span>
-                    </div>
+                <li class="nav-item">
+                  <a class="nav-link jr-brand-color jr-side-link" ng-href="/#!/cv">
+                    CV
                   </a>
                 </li>
-                                <li class="list-group-item">
-                  <a ng-href="/#!/contact">
-                    <div class="">
-                      <span class="" data-toggle="tooltip" data-placement="bottom" title="contact info">Research</span>
-                    </div>
+              <li class="nav-item">
+                  <a  class="nav-link jr-brand-color jr-side-link" ng-href="/#!/research">
+                    Research
                   </a>
                 </li>
-                                <li class="list-group-item">
-                  <a ng-href="/#!/contact">
-                    <div class="">
-                      <span class="" data-toggle="tooltip" data-placement="bottom" title="contact info">Teaching</span>
-                    </div>
+                <li class="nav-item">
+                  <a  class="nav-link jr-brand-color jr-side-link" ng-href="/#!/teaching">
+                  Teaching
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
         </div>
       </div>
       <div class="col-xs-9">
