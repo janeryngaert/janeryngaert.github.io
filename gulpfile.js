@@ -7,10 +7,10 @@ let browsersync = require('browser-sync').create();
 gulp.task('server',['sass'], () => {
 
     browsersync.init({
-        server:  "./app"
+        server:  "./"
     });
      gulp.watch("app/**/*.scss", [ 'sass']);
-     gulp.watch(["app/**/*.js","app/**/*.scss", "app/**/*.html"]).on('change',browsersync.reload);
+     gulp.watch(["app/**/*.js","app/**/*.scss", "app/**/*.html","./*.html"]).on('change',browsersync.reload);
 });
 
 gulp.task('sass', function () {
