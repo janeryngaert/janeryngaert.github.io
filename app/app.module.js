@@ -5,28 +5,26 @@ app.config([
     $locationProvider, $routeProvider) {
   $routeProvider
       .when('/', {
-      templateUrl: 'views/home.html',
+      templateUrl: '/app/views/home.html',
       controller: 'homeController',
     })
     .when('/home', {
-      templateUrl: 'views/home.html',
+      templateUrl: '/app/views/home.html',
       controller: 'homeController',
     })
     .when('/contact', {
-      templateUrl: 'views/contact.html',
+      templateUrl: '/app/views/contact.html',
       controller: 'contactController'
     }).when('/cv', {
-      templateUrl: 'views/cv.html',
+      templateUrl: '/app/views/cv.html',
       controller: 'cvController'
     }).when('/research', {
-      templateUrl: 'views/research.html',
+      templateUrl: '/app/views/research.html',
       controller: 'researchController'
     }).when('/teaching', {
-      templateUrl: 'views/teaching.html',
+      templateUrl: '/app/views/teaching.html',
       controller: 'teachingController'
     }).otherwise({redirectTo: '/home' });
-
-    
     $locationProvider.html5Mode(
         {
             enabled: false,
