@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.content-wrapper{
+    padding: 0 30px;
+    margin: 4px 6px;
+}
+
+.site-background-color{
+    background-color: #00503E;
+    color: white;
+}
+
+.jr-brand-color{
+   color:#566275; 
+}
+
+.jr-side-link{
+    &:hover{
+        color:#00503E;
+    }
+}
+
+.content-title{
+    padding-bottom:5px;
+    border-bottom: solid 1px #566275;
+}
+
+.jr-bar-link{
+color:#566275;
+}

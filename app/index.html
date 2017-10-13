@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="jane-ryngaert-app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jane Ryngaert</title>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular-route.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="/app.module.js"></script>
+  <script src="/controllers/main.controller.js"></script>
+  <script src="/controllers/home.controller.js"></script>
+  <script src="/controllers/contact.controller.js"></script>
+  <script src="/controllers/cv.controller.js"></script>
+  <script src="/controllers/research.controller.js"></script>
+  <script src="/controllers/teaching.controller.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <base href="/">
+</head>
+
+<body>
+      <nav class="navbar site-header site-background-color">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <h2>Jane Ryngaert</h1>
+        </div>
+    </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-3">
+        <div ng-controller="mainController">
+          
+              <ul class="flex-column nav">
+                <li class="nav-item">
+                  <a class="nav-link jr-brand-color jr-side-link" ng-href="/#!/home">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link jr-brand-color jr-side-link" ng-href="/#!/contact">
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link jr-brand-color jr-side-link" ng-href="/#!/cv">
+                    CV
+                  </a>
+                </li>
+              <li class="nav-item">
+                  <a  class="nav-link jr-brand-color jr-side-link" ng-href="/#!/research">
+                    Research
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a  class="nav-link jr-brand-color jr-side-link" ng-href="/#!/teaching">
+                  Teaching
+                  </a>
+                </li>
+              </ul>
+        </div>
+      </div>
+      <div class="col-xs-9">
+        <div ng-view></div>
+      </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
