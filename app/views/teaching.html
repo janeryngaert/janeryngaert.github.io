@@ -6,15 +6,38 @@
 <div class="row">
     <div class="col-xs-10">
             <div class="panel">
+                <div class="panel-heading">
+                    <h5>Fall 2018</h5>
+                </div>
                 <div class="panel-body">
-                    <p> I have experience teaching introductory courses in Microeconomics and Macroeconomics as well as in advanced courses such as International Finance, Comparative Economic Systems, and 
-                        the History of Economic Thought and the University of Texas at Austin and the St. Edward’s University.  I am happy to make 
-                        my teaching evaluations available upon request.
-                    </p>
+                    <ul class="nav nav-tabs">
+                        <li class='active'>
+                            <a ng-click="setActivePanel('ECON 207');" data-toggle="tab">ECON 207</a>
+                        </li>
+                            <!--<li>
+                                <a ng-click="" data-toggle="tab"></a>
+                            </li> -->
+                    </ul>
+                    <div class="tab-content clearfix">
+                        <div ng-class="(activePanel === 'ECON 207') ? 'active' : null" class="tab-pane" id="1a">
+                            <ul class="list-group flex-column">
+                                        <li class="list-group-item">
+                                            <a download href="/app/resources/Intermediate-Macroeconomics.pdf">Syllabus</a>
+                                        </li>
+                                        <li class="list-group-item">              
+                                            <a download href="/app/resources/Problem-Set-1.pdf">Problem Set 1</a>
+                                        </li>
+                                        <li class="list-group-item">              
+                                            <a download href="/app/resources/Problem-Set-1-KEY.pdf">Problem Set 1 Key</a>
+                                        </li>
+                                </ul>     
+                        </div>
+                           <!-- <div class="tab-pane" id="2a">
+                                <h3></h3>
+                            </div> -->
+                    </div>             
                 </div>
             </div>
-              <ul class="list-group flex-column">
-         <li class="list-group-item"><a download href="/app/resources/J_Ryngaert_Teaching_Statement.pdf">Download my Teaching Statement</a></li>
-         </ul>
+        </div>
     </div>
 </div>
