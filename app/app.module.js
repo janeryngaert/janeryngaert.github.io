@@ -4,10 +4,7 @@ app.config([
     '$locationProvider','$routeProvider', function (  
     $locationProvider, $routeProvider) {
   $routeProvider
-      .when('/', {
-      templateUrl: '/app/views/home.html',
-      controller: 'homeController',
-    })
+      .when('/', {redirectTo: '/home' })
     .when('/home', {
       templateUrl: '/app/views/home.html',
       controller: 'homeController',
@@ -29,4 +26,5 @@ app.config([
         {
             enabled: false,
         });
+   // $locationProvider.hashPrefix("");
 }]);
