@@ -1,6 +1,6 @@
 let app = angular.module('jane-ryngaert-app', ['ngRoute']);
 
-app.config([  
+app.config([
     '$locationProvider','$routeProvider', function (  
     $locationProvider, $routeProvider) {
   $routeProvider
@@ -26,5 +26,4 @@ app.config([
         {
             enabled: false,
         });
-   // $locationProvider.hashPrefix("");
 }]);

@@ -9,14 +9,14 @@ body {
   margin: 4px 6px; }
 
 .site-background-color {
-  background-color: #00503E;
+  background-color: #00503e;
   color: white; }
 
 .jr-brand-color {
   color: #566275; }
 
 .jr-side-link:hover {
-  color: #00503E; }
+  color: #00503e; }
 
 .content-title {
   padding-bottom: 5px;
@@ -26,4 +26,8 @@ body {
   color: #566275; }
 
 .jr-media-background {
-  background-color: #FBFBFD; }
+  padding: 10px;
+  background-color: #fbf9f9; }
+
+.panel {
+  background-color: #fbf9f9; }
