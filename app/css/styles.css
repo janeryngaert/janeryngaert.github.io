@@ -1,43 +1,33 @@
 html {
-  height: 100%;
-}
+  height: 100%; }
 
 body {
-  min-height: 100%;
-}
+  min-height: 100%; }
 
 .content-wrapper {
   padding: 0 30px;
-  margin: 4px 6px;
-}
+  margin: 4px 6px; }
 
 .site-background-color {
   background-color: #00503e;
-  color: white;
-}
+  color: white; }
 
 .jr-brand-color {
-  color: #566275;
-}
+  color: #566275; }
 
 .jr-side-link:hover {
-  color: #00503e;
-}
+  color: #00503e; }
 
 .content-title {
   padding-bottom: 5px;
-  border-bottom: solid 1px #566275;
-}
+  border-bottom: solid 1px #566275; }
 
 .jr-bar-link {
-  color: #566275;
-}
+  color: #566275; }
 
 .jr-media-background {
   padding: 10px;
-  background-color: #fbf9f9;
-}
+  background-color: #fbf9f9; }
 
 .panel {
-  background-color: #fbf9f9;
-}
+  background-color: #fbf9f9; }
