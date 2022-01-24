@@ -1,5 +1,6 @@
-app.controller('homeController', [ "$scope", function($scope){
-
-$scope.message = "home";
-
-}]);
+app.controller('homeController', [
+  '$scope',
+  function ($scope) {
+    $scope.message = 'home';
+  },
+]);
